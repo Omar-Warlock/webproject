@@ -1,0 +1,182 @@
+<!doctype html>
+<!-- 
+  Project Name: Healthy Life Guide
+  Page: Nutrition (nutrition.html)
+  Student Project - Web Development I
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition - Healthy Life Guide</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">Healthy Life Guide</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nutrition.html" class="active">Nutrition</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container fade-in">
+      <!-- Header Text -->
+      <section style="text-align: center; max-width: 800px; margin: 0 auto">
+        <h1 class="section-title">Nutrition Tips</h1>
+        <p>
+          Fueling your body with the right nutrients is the cornerstone of a
+          vibrant student life. Discover simple, actionable advice to balance
+          your plate and boost your energy levels for both study and play.
+        </p>
+      </section>
+
+      <!-- Image Gallery Requirement (Project Specification Requirement - 4 images) -->
+      <section class="gallery">
+        <div class="gallery-item">
+          <img src="images/meal1.png" alt="Healthy salad bowl" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/meal2.png" alt="Balanced salmon meal" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/meal3.png" alt="Smoothie bowl" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/meal4.png" alt="Whole grain snacks" />
+        </div>
+      </section>
+
+      <!-- Core Food Groups Cards -->
+      <section class="card-grid" style="margin-top: 40px">
+        <article class="card">
+          <h3>Fruits & Veggies</h3>
+          <p>
+            Aim for five portions a day to get a variety of essential vitamins
+            and minerals.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Protein</h3>
+          <p>
+            Essential for muscle repair and cognitive function. Include beans,
+            eggs, or lean meats.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Whole Grains</h3>
+          <p>
+            Source of steady energy. Choose brown rice, oats, and whole-wheat
+            bread.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Hydration</h3>
+          <p>
+            Stay hydrated to maintain focus. Aim for 2 liters of water daily for
+            optimal health.
+          </p>
+        </article>
+      </section>
+
+      <!-- Table Requirement with Colspan (Project Specification Requirement) -->
+      <section>
+        <h2 class="section-title">Weekly Healthy Meal Plan</h2>
+        <div style="overflow-x: auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Dinner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>Oatmeal with Berries</td>
+                <td>Quinoa Salad</td>
+                <td>Grilled Chicken & Broccoli</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Greek Yogurt & Honey</td>
+                <td>Turkey Wrap</td>
+                <td>Lentil Soup</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Whole Grain Toast</td>
+                <td>Chickpea Salad</td>
+                <td>Baked Salmon</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Smoothie Bowl</td>
+                <td>Pasta Primavera</td>
+                <td>Tofu Stir-fry</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Boiled Eggs & Fruit</td>
+                <td>Tuna Salad</td>
+                <td>Homemade Pizza</td>
+              </tr>
+              <!-- Colspan Example below -->
+              <tr>
+                <td class="table-special">Weekend</td>
+                <td colspan="3" class="table-special">
+                  Weekend Special: Interactive Cooking Workshop & Local Farmers
+                  Market Trip
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Visit Our Health Center</h2>
+        <div
+          style="
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #bbcbbb;
+          "
+        >
+          <iframe
+            src="https://www.google.com/maps?q=University%20of%20Technology%20and%20Applied%20Sciences%20Muscat%20Oman&output=embed"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p><strong>Healthy Life Guide</strong> &copy; 2024</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="main.js"></script>
+  </body>
+</html>

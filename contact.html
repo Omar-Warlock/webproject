@@ -1,0 +1,196 @@
+<!doctype html>
+<!-- 
+  Project Name: Healthy Life Guide
+  Page: Contact (contact.html)
+  Student Project - Web Development I
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Healthy Life Guide</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">Healthy Life Guide</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container fade-in">
+      <section style="text-align: center; margin-bottom: 40px">
+        <h1 class="section-title">Contact Us</h1>
+        <p>
+          Your journey to a healthier lifestyle is important to us. Whether you
+          have feedback, questions about our guides, or just want to share your
+          progress, we're here to listen.
+        </p>
+      </section>
+
+      <!-- Flexbox Layout for Form and Info -->
+      <div style="display: flex; flex-wrap: wrap; gap: 40px">
+        <!-- Form Section Section (Project Specification Requirement) -->
+        <section style="flex: 2; min-width: 300px">
+          <div class="form-container">
+            <!-- Form with multiple input types -->
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="full_name">Full Name *</label>
+                <input
+                  type="text"
+                  id="full_name"
+                  name="full_name"
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="alex@university.edu"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  min="16"
+                  max="100"
+                  placeholder="e.g. 21"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                    />
+                    <label
+                      for="female"
+                      style="display: inline; margin: 0; font-weight: normal"
+                      >Female</label
+                    >
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label
+                      for="male"
+                      style="display: inline; margin: 0; font-weight: normal"
+                      >Male</label
+                    >
+                  </div>
+                  <div class="radio-item">
+                    <input
+                      type="radio"
+                      id="other"
+                      name="gender"
+                      value="other"
+                    />
+                    <label
+                      for="other"
+                      style="display: inline; margin: 0; font-weight: normal"
+                      >Other</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">How can we help you? *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message or feedback..."
+                ></textarea>
+              </div>
+
+              <!-- Inline CSS Example (Project Specification Requirement) -->
+              <div style="margin-top: 10px">
+                <button type="submit" class="btn" style="width: 100%">
+                  Submit Feedback
+                </button>
+              </div>
+
+              <!-- Area for JS validation messages -->
+              <div id="form-message"></div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Contact Information Side Card -->
+        <aside style="flex: 1; min-width: 280px; padding: 60px 0">
+          <div class="card" style="text-align: left; background-color: #e8f0e5">
+            <h3 style="color: #006d37; margin-bottom: 15px">Get in Touch</h3>
+            <p style="margin-bottom: 20px">
+              Our team is available Monday through Friday to support your
+              wellness goals.
+            </p>
+
+            <ul style="list-style: none">
+              <li style="margin-bottom: 15px">
+                <strong>📧 Email Support:</strong><br />
+                support@healthylifeguide.edu
+              </li>
+              <li style="margin-bottom: 15px">
+                <strong>📞 Call Us:</strong><br />
+                +1 (555) 123-4567
+              </li>
+              <li style="margin-bottom: 15px">
+                <strong>📍 Location:</strong><br />
+                Campus Wellness Center, Suite 402
+              </li>
+            </ul>
+
+            <div
+              style="margin-top: 30px; border-radius: 10px; overflow: hidden"
+            >
+              <img
+                src="images/community.jpg"
+                alt="Student community"
+                style="width: 100%"
+                onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+                "
+              />
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Healthy Life Guide - Student Project Wellness</p>
+        <p style="font-size: 0.8rem; opacity: 0.7">© 2024</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="main.js"></script>
+  </body>
+</html>
